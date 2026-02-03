@@ -192,7 +192,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-02-03 19:32:05" itemprop="dateModified" datetime="2026-02-03T19:32:05+08:00">2026-02-03</time>
+      <time title="Modified: 2026-02-03 19:38:33" itemprop="dateModified" datetime="2026-02-03T19:38:33+08:00">2026-02-03</time>
     </span>
 
   
@@ -205,7 +205,45 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>mkdir +文件夹名     新建文件夹（目录）<br>rm -rf +文件夹名    删除文件夹（目录）<br>touch +文件名       创建文件<br>rm +文件名          删除文件<br>hexo c             清除缓存<br>hexo g             生成静态网页（博客网页）<br>hexo d             远程部署</p>
+          <table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能描述</th>
+<th>注意事项</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>mkdir 文件夹名</code></td>
+<td>新建文件夹（目录）</td>
+<td>可使用 <code>mkdir -p 父目录/子目录</code> 创建多级目录</td>
+</tr>
+<tr>
+<td><code>rm -rf 文件夹名</code></td>
+<td>删除文件夹（目录）</td>
+<td><strong>危险</strong>：强制递归删除，无法恢复，谨慎使用</td>
+</tr>
+<tr>
+<td><code>touch 文件名</code></td>
+<td>创建文件</td>
+<td>可用于创建空文件或更新文件时间戳</td>
+</tr>
+<tr>
+<td><code>rm 文件名</code></td>
+<td>删除文件</td>
+<td>可使用 <code>rm -i 文件名</code> 交互式删除（推荐安全使用）</td>
+</tr>
+<tr>
+<td><code>hexo c</code></td>
+<td>清除缓存</td>
+<td>清除Hexo生成的缓存文件和数据库</td>
+</tr>
+<tr>
+<td><code>hexo g</code></td>
+<td>生成静态网页（博客网页）</td>
+<td>将Markdown等源文件转换为HTML静态文件</td>
+</tr>
+</tbody></table>
 
       
     </div>

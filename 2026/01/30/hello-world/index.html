@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Muse","darkmode":true,"version":"8.27.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="mkdir +文件夹名     新建文件夹（目录）rm -rf +文件夹名    删除文件夹（目录）touch +文件名       创建文件rm +文件名          删除文件hexo c             清除缓存hexo g             生成静态网页（博客网页）hexo d             远程部署">
+    <meta name="description" content="命令 功能描述 注意事项    mkdir 文件夹名 新建文件夹（目录） 可使用 mkdir -p 父目录&#x2F;子目录 创建多级目录   rm -rf 文件夹名 删除文件夹（目录） 危险：强制递归删除，无法恢复，谨慎使用   touch 文件名 创建文件 可用于创建空文件或更新文件时间戳   rm 文件名 删除文件 可使用 rm -i 文件名 交互式删除（推荐安全使用）   hexo c 清除缓">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://example.com/2026/01/30/hello-world/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="mkdir +文件夹名     新建文件夹（目录）rm -rf +文件夹名    删除文件夹（目录）touch +文件名       创建文件rm +文件名          删除文件hexo c             清除缓存hexo g             生成静态网页（博客网页）hexo d             远程部署">
+<meta property="og:description" content="命令 功能描述 注意事项    mkdir 文件夹名 新建文件夹（目录） 可使用 mkdir -p 父目录&#x2F;子目录 创建多级目录   rm -rf 文件夹名 删除文件夹（目录） 危险：强制递归删除，无法恢复，谨慎使用   touch 文件名 创建文件 可用于创建空文件或更新文件时间戳   rm 文件名 删除文件 可使用 rm -i 文件名 交互式删除（推荐安全使用）   hexo c 清除缓">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2026-01-30T11:10:56.276Z">
-<meta property="article:modified_time" content="2026-02-03T11:32:05.246Z">
+<meta property="article:modified_time" content="2026-02-03T11:38:33.719Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -197,7 +197,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2026-02-03 19:32:05" itemprop="dateModified" datetime="2026-02-03T19:32:05+08:00">2026-02-03</time>
+      <time title="Modified: 2026-02-03 19:38:33" itemprop="dateModified" datetime="2026-02-03T19:38:33+08:00">2026-02-03</time>
     </span>
 
   
@@ -209,7 +209,45 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>mkdir +文件夹名     新建文件夹（目录）<br>rm -rf +文件夹名    删除文件夹（目录）<br>touch +文件名       创建文件<br>rm +文件名          删除文件<br>hexo c             清除缓存<br>hexo g             生成静态网页（博客网页）<br>hexo d             远程部署</p>
+    <div class="post-body" itemprop="articleBody"><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能描述</th>
+<th>注意事项</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>mkdir 文件夹名</code></td>
+<td>新建文件夹（目录）</td>
+<td>可使用 <code>mkdir -p 父目录/子目录</code> 创建多级目录</td>
+</tr>
+<tr>
+<td><code>rm -rf 文件夹名</code></td>
+<td>删除文件夹（目录）</td>
+<td><strong>危险</strong>：强制递归删除，无法恢复，谨慎使用</td>
+</tr>
+<tr>
+<td><code>touch 文件名</code></td>
+<td>创建文件</td>
+<td>可用于创建空文件或更新文件时间戳</td>
+</tr>
+<tr>
+<td><code>rm 文件名</code></td>
+<td>删除文件</td>
+<td>可使用 <code>rm -i 文件名</code> 交互式删除（推荐安全使用）</td>
+</tr>
+<tr>
+<td><code>hexo c</code></td>
+<td>清除缓存</td>
+<td>清除Hexo生成的缓存文件和数据库</td>
+</tr>
+<tr>
+<td><code>hexo g</code></td>
+<td>生成静态网页（博客网页）</td>
+<td>将Markdown等源文件转换为HTML静态文件</td>
+</tr>
+</tbody></table>
 
     </div>
 
